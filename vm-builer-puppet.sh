@@ -1,0 +1,32 @@
+sudo ubuntu-vm-builder kvm \
+   lucid \
+ --addpkg=manpages \
+ --addpkg=openssh-server \
+ --addpkg=libopenssl-ruby \
+ --addpkg=rdoc \
+ --addpkg=irb1.8 \
+ --addpkg=libopenssl-ruby1.8 \
+ --addpkg=libreadline-ruby1.8 \
+ --addpkg=libruby1.8 \
+ --addpkg=rdoc1.8 \
+ --addpkg=ruby1.8 \
+ --addpkg=facter \
+ --addpkg=puppet \
+ --addpkg=puppetmaster \
+ --arch=i386 \
+ --debug \
+ --verbose \
+ --domain=puppet \
+ --hostname=puppet \
+ --iso='/home/jmaclean/sys/isoimages/ubuntu-10.04.1-server-i386.iso' \
+ --mem=1024 \
+ --name=jmaclean \
+ --pass=wtf \
+ --rootsize=4096 \
+ --user=jmaclean \
+ --verbose \
+ --ip 192.168.122.100 \
+ --mask 255.255.255.0 \
+ --bcast 192.168.122.255 \
+ --gw 192.168.122.1 \
+ --libvirt qemu:///system
